@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   PALETAS
+========================= */
+
+:root {
+  --azul-ceu-claro: #a9b3e5;
+  --azul-vivo: #2c39a0;
+  --azul-profundo: #00044e;
+  --azul-noite: #012a4a;
+  --azul-hover: #61a5c2;
+  --texto-principal: #bccbdb;
+  --transparente-escuro: #00022b32;
+  --borda: rgba(170, 165, 255, 0.241);
+}
+
+/* =========================
+   FONTES
+========================= */
+
+@font-face {
+  font-family: "Calm";
+  src: url("../assets/font/Calm\ Serif\ \(DemoVersion\).otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Le";
+  src: url("../assets/font/Le\ Jour\ Serif\ Personal\ Use\ Only.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dream";
+  src: url("../assets/font/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    200deg,
+    var(--azul-ceu-claro),
+    var(--azul-vivo),
+    var(--azul-profundo),
+    var(--azul-noite)
+  );
+  background-size: 500% 500%;
+  animation: aurora 30s ease infinite;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  margin: 0;
+}
+
+header h1 {
+  font-family: "Le";
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--texto-principal);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--texto-principal);
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+  width: 70vw;
+  height: 70vh;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border-radius: 10px;
+  background-color: var(--transparente-escuro);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--borda);
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.texto {
+  display: flex;
+  flex-direction: column;
+}
+
+section h1 {
+  margin-left: 30px;
+  font-family: "Le";
+  font-size: 65px;
+  font-weight: normal;
+}
+
+section p {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Dream";
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.links {
+  display: flex;
+  gap: 10px;
+  font-family: "Calm";
+  font-weight: normal;
+}
+
+a {
+  margin-left: 30px;
+  padding: 12px 12px;
+  color: var(--texto-principal);
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--azul-hover);
+}
+
+/* =========================
+   IMAGEM
+========================= */
+
+.imagem img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================
+   ANIMAÇÃO
+========================= */
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    gap: 30px;
+  }
+
+  .imagem img {
+    max-width: 220px;
+  }
+
+  section h1 {
+    font-size: 42px;
+  }
+
+  section p {
+    font-size: 20px;
+  }
+}

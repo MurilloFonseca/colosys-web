@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   PALETAS
+========================= */
+
+:root {
+  /* Aurora / fundo principal */
+  --azul-ceu-claro: #a9b3e5;
+  --azul-vivo: #2c39a0;
+  --azul-profundo: #00044e;
+  --azul-noite: #012a4a;
+
+  /* Destaque */
+  --azul-hover: #61a5c2;
+  --button-hover-color: #3f4b57;
+
+  /* Texto */
+  --texto-principal: #bccbdb;
+
+  /* Elementos escuros */
+  --transparente-escuro: #00022b32;
+
+  /* Bordas suaves */
+  --borda: rgba(170, 165, 255, 0.241);
+}
+
+/* =========================
+   FONTES
+========================= */
+
+@font-face {
+  font-family: "Calm";
+
+  src: url("../assets/font/Calm\ Serif\ \(DemoVersion\).otf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Le";
+
+  src: url("../assets/font/Le\ Jour\ Serif\ Personal\ Use\ Only.otf")
+    format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dream";
+
+  src: url("../assets/font/CaviarDreams.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    200deg,
+    var(--azul-ceu-claro),
+    var(--azul-vivo),
+    var(--azul-profundo),
+    var(--azul-noite)
+  );
+  background-size: 500% 500%;
+  animation: aurora 30s ease infinite;
+}
+
+/* =========================
+   ANIMAÇÃO
+========================= */
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  margin: 0;
+}
+
+header h1 {
+  font-family: "Le";
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--texto-principal);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--texto-principal);
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+  width: 35vw;
+  height: 70vh;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--transparente-escuro);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--borda);
+}
+
+section h1 {
+  margin: 20px;
+  text-align: center;
+  font-family: "Le";
+  font-size: 32.5px;
+  font-weight: normal;
+}
+
+/* =========================
+   FORM
+========================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+  height: 30px;
+  text-align: center;
+  color: var(--texto-principal);
+  background-color: var(--transparente-escuro);
+  border-radius: 50px;
+  border: 1px solid var(--borda);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+  height: 40px;
+  color: var(--texto-principal);
+  background-color: var(--transparente-escuro);
+  border-radius: 100px;
+  border: 1px solid var(--borda);
+  transition: 0.5s;
+}
+
+button:hover {
+  color: var(--button-hover-color);
+  background-color: var(--azul-hover);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+  section {
+    width: 90vw;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  section h1 {
+    font-size: 28px;
+  }
+}
