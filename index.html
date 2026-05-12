@@ -28,5 +28,10 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const user = JSON.parse(localStorage.getItem("user"));
+      if (user !== null) window.location.replace("./src/pages/principal.html");
+    </script>
   </body>
 </html>
