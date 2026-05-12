@@ -9,7 +9,7 @@ async function loginUser(e) {
 
   if (user === undefined) {
     e.preventDefault();
-    alert("Informações inválidas");
+    alert("Usuário inexistente");
 
     return;
   }
@@ -18,7 +18,7 @@ async function loginUser(e) {
 
   if (!correctPw) {
     e.preventDefault();
-    alert("Informações inválidas");
+    alert("Senha inválida");
 
     return;
   }
