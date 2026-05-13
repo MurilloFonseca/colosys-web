@@ -189,6 +189,23 @@ button:hover {
 }
 
 /* =========================
+   Âncora
+========================= */
+
+a {
+  margin-top: 20px;
+  color: var(--texto-principal);
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--azul-hover);
+}
+
+
+/* =========================
    RESPONSIVIDADE
 ========================= */
 

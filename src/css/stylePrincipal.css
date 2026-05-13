@@ -57,6 +57,7 @@ body {
 /* =========================
    HEADER
 ========================= */
+  
 
 .logo{
     z-index: 10;
@@ -80,6 +81,22 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: var(--texto-principal);
+}
+
+button{
+    color: var(--texto-principal);
+    background-color: var(--transparente-escuro);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 100px;
+    border: 1px solid var(--borda);
+}
+
+.sair{
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    right: 30px;
 }
 
 /* =========================
