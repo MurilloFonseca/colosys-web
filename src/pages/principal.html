@@ -1,231 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colosys | Jovi</title>
-    <link rel="stylesheet" href="../css/stylePrincipal.css">
-</head>
+    <link rel="stylesheet" href="../css/stylePrincipal.css" />
+    <script src="../js/main.js"></script>
+  </head>
 
-<body>
+
+  <body>
     <header>
+      <div class="logo">
+        <img src="../assets/img/logo.png" />
+        <h1>Jovi</h1>
+      </div>
 
-        <div class="logo">
-            <img src="../assets/img/logo.png">
-            <h1>Jovi</h1>
-        </div>
+      <a href="../../index.html"><button class="sair" onclick="logout()">Sair</button></a>
 
-            <a href="../../index.html"><button class="sair">Sair</button></a>
-
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#publico">Público</a>
-            <a href="#ideia">Ideia</a>
-            <a href="#mudanca">Mudança</a>
-            <a href="#solucao">Solução</a>
-            <a href="#final">Final</a>
-        </nav>
-
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#publico">Público</a>
+        <a href="#ideia">Ideia</a>
+        <a href="#mudanca">Mudança</a>
+        <a href="#solucao">Solução</a>
+        <a href="#final">Final</a>
+      </nav>
     </header>
 
     <main>
+      <section class="hero-banner" id="inicio">
+        <video autoplay muted loop playsinline>
+          <source src="../assets/video/banner.mp4" type="video/mp4" />
+        </video>
 
-        <section class="hero-banner" id="inicio">
+        <div class="hero-texto">
+          <h1>Registro dos melhores momentos com inteligência.</h1>
+        </div>
+      </section>
 
-            <video autoplay muted loop playsinline>
-                <source src="../assets/video/banner.mp4" type="video/mp4">
-            </video>
+      <section class="publico" id="publico">
+        <h2>Após nos conectarmos com o público...</h2>
+        <div class="publico-texto">
+          <p>
+            A JOVI entra no mercado brasileiro com foco em oferecer uma
+            experiência relevante e adaptada ao consumidor local. Dentro desse
+            contexto, surge o desafio de desenvolver uma solução de software
+            capaz de aprimorar a experiência da câmera, tornando seu uso mais
+            intuitivo e eficiente.
+          </p>
+        </div>
 
-            <div class="hero-texto">
-                <h1>Registro dos melhores momentos com inteligência.</h1>
+        <div class="cards-publico">
+          <div class="card-publico">
+            <h4>12 de 26</h4>
+            <div class="card-publico-img">
+              <img src="../assets/img/pessoas.png" />
             </div>
+            <p>Utilizam a câmera diversas vezes ao dia</p>
+          </div>
 
-        </section>
-
-        <section class="publico" id="publico">
-
-            <h2>Após nos conectarmos com o público...</h2>
-            <div class="publico-texto">
-                <p>A JOVI entra no mercado brasileiro com foco em oferecer uma experiência relevante e adaptada ao
-                    consumidor local.
-                    Dentro desse contexto, surge o desafio de desenvolver uma solução de software capaz de aprimorar a
-                    experiência da câmera, tornando seu uso mais intuitivo e eficiente.
-                </p>
+          <div class="card-publico">
+            <h4>42%</h4>
+            <div class="card-publico-img">
+              <img src="../assets/img/camera.png" />
             </div>
+            <p>Consideram a interface de suas câmeras de média dificuldade</p>
+          </div>
 
-            <div class="cards-publico">
-
-                <div class="card-publico">
-                    <h4>12 de 26</h4>
-                    <div class="card-publico-img">
-                        <img src="../assets/img/pessoas.png">
-                    </div>
-                    <p>Utilizam a câmera diversas vezes ao dia</p>
-                </div>
-
-                <div class="card-publico">
-                    <h4>42%</h4>
-                    <div class="card-publico-img">
-                        <img src="../assets/img/camera.png">
-                    </div>
-                    <p>Consideram a interface de suas câmeras de média dificuldade</p>
-                </div>
-
-                <div class="card-publico">
-                    <h4>7%</h4>
-                    <div class="card-publico-img">
-                        <img src="../assets/img/interface.png">
-                    </div>
-                    <p>Dizem saber usar a câmera perfeitamente</p>
-                </div>
-
+          <div class="card-publico">
+            <h4>7%</h4>
+            <div class="card-publico-img">
+              <img src="../assets/img/interface.png" />
             </div>
+            <p>Dizem saber usar a câmera perfeitamente</p>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section class="ideia" id="ideia">
+        <div class="ideia-texto">
+          <h4>Como podemos transformar a experiência da câmera?</h4>
+          <p>
+            Transformamos a experiência de fotografar com uma solução
+            inteligente baseada em IA. Nosso software integrado à câmera utiliza
+            o Gemini para atuar como um assistente em tempo real, corrigindo
+            automaticamente problemas como imagens borradas, baixa iluminação e
+            dificuldades em capturar movimentos. Com recursos de estabilização
+            inteligente, ajuste automático de luz e foco, e captura no momento
+            ideal, eliminamos a necessidade de intervenções manuais. O resultado
+            é uma câmera mais eficiente, que otimiza cada clique e garante
+            imagens de alta qualidade em qualquer situação.
+          </p>
+        </div>
 
-        <section class="ideia" id="ideia">
+        <div class="ideia-img">
+          <video autoplay muted loop playsinline>
+            <source src="../assets/video/ideia.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
 
-            <div class="ideia-texto">
-                <h4>Como podemos transformar a experiência da câmera?</h4>
-                <p>Transformamos a experiência de fotografar com uma solução inteligente baseada em IA. Nosso software
-                    integrado
-                    à câmera utiliza o Gemini para atuar como um assistente em tempo real, corrigindo automaticamente
-                    problemas
-                    como imagens borradas, baixa iluminação e dificuldades em capturar movimentos.
+      <section class="mudanca" id="mudanca">
+        <h2>Principais Mudanças</h2>
+        <div class="mudanca-informacao">
+          <div class="mudanca-informacao-secao">
+            <h5>Foco</h5>
+            <p>O foco da câmera é mais rápido e eficiente</p>
+          </div>
 
-                    Com recursos de estabilização inteligente, ajuste automático de luz e foco, e captura no momento
-                    ideal,
-                    eliminamos a necessidade de intervenções manuais. O resultado é uma câmera mais eficiente, que
-                    otimiza
-                    cada
-                    clique e garante imagens de alta qualidade em qualquer situação.
-                </p>
-            </div>
+          <div class="mudanca-informacao-secao">
+            <h5>Zoom</h5>
+            <p>Zoom com alta qualidade</p>
+          </div>
 
-            <div class="ideia-img">
-                <video autoplay muted loop playsinline>
-                    <source src="../assets/video/ideia.mp4" type="video/mp4">
-                </video>
-            </div>
+          <div class="mudanca-informacao-secao">
+            <h5>IA</h5>
+            <p>Assistente virtual que guia o usuário</p>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section class="solucao" id="solucao">
+        <h2>A solução com Inteligência Artificial</h2>
 
-        <section class="mudanca" id="mudanca">
+        <div class="cards-solucao">
+          <div class="card-solucao">
+            <h4>Imagens borradas e foco inconsistente</h4>
+            <img src="../assets/img/imagemborrada.png" />
+            <p>
+              Utiliza inteligência artificial para estabilizar a câmera,
+              melhorar o foco em objetos em movimento e capturar automaticamente
+              o melhor momento da foto, reduzindo borrões e aumentando a
+              qualidade das imagens.
+            </p>
+          </div>
 
-            <h2>Principais Mudanças</h2>
-            <div class="mudanca-informacao">
+          <div class="card-solucao">
+            <h4>Baixa luminosidade</h4>
+            <img src="../assets/img/baixaluminosidade.png" />
+            <p>
+              Melhora fotos em ambientes escuros utilizando inteligência
+              artificial para reduzir ruídos, ajustar automaticamente a
+              exposição e otimizar a iluminação da imagem, garantindo fotos mais
+              claras e equilibradas sem depender excessivamente do flash.
+            </p>
+          </div>
 
-                <div class="mudanca-informacao-secao">
-                    <h5>Foco</h5>
-                    <p>O foco da câmera é mais rápido e eficiente</p>
-                </div>
+          <div class="card-solucao">
+            <h4>Movimento rápido</h4>
+            <img src="../assets/img/movimentorapido.png" />
+            <p>
+              Usa inteligência artificial para ajustar automaticamente a câmera
+              em cenas de movimento, realizar capturas em sequência e acompanhar
+              objetos em tempo real, aumentando a nitidez e a qualidade das
+              fotos de ação.
+            </p>
+          </div>
 
-                <div class="mudanca-informacao-secao">
-                    <h5>Zoom</h5>
-                    <p>Zoom com alta qualidade</p>
-                </div>
+          <div class="card-solucao">
+            <h4>Fotos artificiais</h4>
+            <img src="../assets/img/fotoartificial.png" />
+            <p>
+              Busca deixar as fotos mais naturais utilizando inteligência
+              artificial para reduzir exageros no processamento, melhorar a
+              precisão no modo retrato e equilibrar automaticamente o HDR,
+              garantindo imagens mais realistas e visualmente agradáveis.
+            </p>
+          </div>
 
-                <div class="mudanca-informacao-secao">
-                    <h5>IA</h5>
-                    <p>Assistente virtual que guia o usuário</p>
-                </div>
+          <div class="card-solucao">
+            <h4>Ergonomia e manuseio</h4>
+            <img src="../assets/img/ergonomia.png" />
+            <p>
+              A ergonomia da câmera pode ser aprimorada com uma interface
+              otimizada para uso com uma mão, comandos por voz ou gestos e
+              atalhos personalizáveis, tornando a navegação mais simples, rápida
+              e confortável para o usuário.
+            </p>
+          </div>
 
-            </div>
+          <div class="card-solucao">
+            <h4>Zoom e limitações ópticas</h4>
+            <img src="../assets/img/zoom.png" />
+            <p>
+              O zoom e as limitações ópticas podem ser melhorados com
+              inteligência artificial para aumentar a qualidade do zoom digital,
+              corrigir distorções automaticamente e reconstruir detalhes da
+              imagem, proporcionando fotos mais nítidas e equilibradas.
+            </p>
+          </div>
 
-        </section>
+          <div class="card-solucao">
+            <h4>Bateria e armazenamento</h4>
+            <img src="../assets/img/bateria.png" />
+            <p>
+              O gerenciamento de bateria e armazenamento pode ser otimizado com
+              compressão inteligente de imagens, redução do consumo de energia
+              da câmera e organização automática das fotos, removendo duplicadas
+              e facilitando o armazenamento do usuário.
+            </p>
+          </div>
 
-        <section class="solucao" id="solucao">
-            <h2>A solução com Inteligência Artificial</h2>
+          <div class="card-solucao">
+            <h4>Lente suja ou danificada</h4>
+            <img src="../assets/img/lente.png" />
+            <p>
+              A qualidade das fotos pode ser preservada com inteligência
+              artificial capaz de detectar sujeira, reflexos ou danos na lente
+              antes da captura, além de sugerir automaticamente a limpeza para
+              evitar imagens comprometidas.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <div class="cards-solucao">
-
-                <div class="card-solucao">
-                    <h4>Imagens borradas e foco inconsistente</h4>
-                    <img src="../assets/img/imagemborrada.png">
-                    <p>Utiliza inteligência artificial para estabilizar a câmera, melhorar o foco em objetos em
-                        movimento e
-                        capturar automaticamente o melhor momento da foto, reduzindo borrões e aumentando a qualidade
-                        das
-                        imagens.</p>
-                </div>
-
-                <div class="card-solucao">
-                    <h4>Baixa luminosidade</h4>
-                    <img src="../assets/img/baixaluminosidade.png">
-                    <p>Melhora fotos em ambientes escuros utilizando inteligência artificial para reduzir ruídos,
-                        ajustar
-                        automaticamente a exposição e otimizar a iluminação da imagem, garantindo fotos mais claras e
-                        equilibradas sem depender excessivamente do flash.</p>
-                </div>
-
-                <div class="card-solucao">
-                    <h4>Movimento rápido</h4>
-                    <img src="../assets/img/movimentorapido.png">
-                    <p>Usa inteligência artificial para ajustar automaticamente a câmera em cenas de movimento, realizar
-                        capturas em sequência e acompanhar objetos em tempo real, aumentando a nitidez e a qualidade das
-                        fotos de ação.</p>
-                </div>
-
-                <div class="card-solucao">
-                    <h4>Fotos artificiais</h4>
-                    <img src="../assets/img/fotoartificial.png">
-                    <p>Busca deixar as fotos mais naturais utilizando inteligência artificial para reduzir exageros no
-                        processamento, melhorar a precisão no modo retrato e equilibrar automaticamente o HDR,
-                        garantindo
-                        imagens mais realistas e visualmente agradáveis.</p>
-                </div>
-
-                <div class="card-solucao">
-                    <h4>Ergonomia e manuseio</h4>
-                    <img src="../assets/img/ergonomia.png">
-                    <p>A ergonomia da câmera pode ser aprimorada com uma interface otimizada para uso com uma mão,
-                        comandos
-                        por voz ou gestos e atalhos personalizáveis, tornando a navegação mais simples, rápida e
-                        confortável
-                        para o usuário.</p>
-                </div>
-
-                <div class="card-solucao">
-                    <h4>Zoom e limitações ópticas</h4>
-                    <img src="../assets/img/zoom.png">
-                    <p>O zoom e as limitações ópticas podem ser melhorados com inteligência artificial para aumentar a
-                        qualidade do zoom digital, corrigir distorções automaticamente e reconstruir detalhes da imagem,
-                        proporcionando fotos mais nítidas e equilibradas.</p>
-                </div>
-
-                <div class="card-solucao">
-                    <h4>Bateria e armazenamento</h4>
-                    <img src="../assets/img/bateria.png">
-                    <p>O gerenciamento de bateria e armazenamento pode ser otimizado com compressão inteligente de
-                        imagens,
-                        redução do consumo de energia da câmera e organização automática das fotos, removendo duplicadas
-                        e
-                        facilitando o armazenamento do usuário.</p>
-                </div>
-
-                <div class="card-solucao">
-                    <h4>Lente suja ou danificada</h4>
-                    <img src="../assets/img/lente.png">
-                    <p>A qualidade das fotos pode ser preservada com inteligência artificial capaz de detectar sujeira,
-                        reflexos ou danos na lente antes da captura, além de sugerir automaticamente a limpeza para
-                        evitar
-                        imagens comprometidas.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="final" id="final">
-            <h2>A fotografia do futuro começa aqui.</h2>
-        </section>
+      <section class="final" id="final">
+        <h2>A fotografia do futuro começa aqui.</h2>
+      </section>
     </main>
 
     <footer>
-        <p>© 2026 Jovi • Colosys</p>
+      <p>© 2026 Jovi • Colosys</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
