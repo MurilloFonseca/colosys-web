@@ -13,7 +13,6 @@ async function createUser(e) {
 
   if (!validateInfo(name, email, password)) {
     e.preventDefault();
-    alert("Informações inválidas");
 
     return;
   }
