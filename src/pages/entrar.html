@@ -9,25 +9,29 @@
     <script src="../js/entrar.js" defer></script>
   </head>
 
-  <body>
-    <main>
-      <header>
-        <img src="../assets/img/logo.png" />
-        <h1>Entrar</h1>
-      </header>
+<body>
+  <main>
+    <header>
+      <img src="../assets/img/logo.png" />
+      <h1>Entrar</h1>
+    </header>
 
-      <section>
-        <div class="texto">
-          <h1>Digite seu nome de usuário e a sua senha:</h1>
-          <form action="./principal.html" method="get" onsubmit="loginUser(event)">
-            <label for="email">Email:</label>
-            <input type="email" id="email" autocomplete="email" />
-            <label for="password">Senha:</label>
-            <input type="password" id="password" autocomplete="off" />
-            <button type="submit">Entrar</button>
-          </form>
+    <section>
+      <div class="texto">
+        <h1>Digite seu nome de usuário e a sua senha:</h1>
+        <form action="./principal.html" method="get">
+          <label for="email">Email:</label>
+          <input type="email" id="email" autocomplete="email" />
+          <label for="password">Senha:</label>
+          <input type="password" id="password" autocomplete="off" />
+          <button type="submit">Entrar</button>
+        </form>
+        <div class="ancora">
+          <a href="../../index.html">Sair</a>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
