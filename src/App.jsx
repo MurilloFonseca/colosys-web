@@ -1,0 +1,29 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Publico from "./components/Publico";
+import Ideia from "./components/Ideia";
+import Mudanca from "./components/Mudanca";
+import Solucao from "./components/Solucao";
+import Final from "./components/Final";
+import Footer from "./components/Footer";
+
+function App() {
+  return (
+    <>
+      <Header />
+
+      <main>
+        <Hero />
+        <Publico />
+        <Ideia />
+        <Mudanca />
+        <Solucao />
+        <Final />
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+
+export default App;

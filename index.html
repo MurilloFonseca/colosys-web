@@ -1,38 +1,13 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Colosys</title>
-    <link rel="stylesheet" href="./src/css/styleIndex.css" />
-    <link rel="icon" href="./src/assets/img/icon.ico" type="image/x-icon">
+    <title>Colosys | Jovi</title>
   </head>
-
   <body>
-    <header>
-      <img src="./src/assets/img/logo.png" />
-      <h1>Colosys</h1>
-    </header>
-    <main>
-      <section>
-        <div class="texto">
-          <h1>Seja Bem-Vindo(a)!</h1>
-          <p>"Capture momentos com simplicidade."</p>
-
-          <div class="links">
-            <a href="./src/pages/entrar.html">Entrar</a>
-            <a href="./src/pages/cadastro.html">Cadastro</a>
-          </div>
-        </div>
-        <div class="imagem">
-          <img src="./src/assets/img/CelularInicio.png" />
-        </div>
-      </section>
-    </main>
-
-    <script>
-      const user = JSON.parse(localStorage.getItem("user"));
-      if (user !== null) window.location.replace("./src/pages/principal.html");
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
