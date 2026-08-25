@@ -1,5 +1,5 @@
 import navLinks from "../data/navLinks";
-import Logo from '../assets/img/logo.png'
+import Logo from "../assets/img/logo.png";
 
 function Header() {
   return (
@@ -19,7 +19,7 @@ function Header() {
         className="
           z-10 fixed flex justify-center items-center top-5 left-1/2 -translate-x-1/2 
           bg-transparente-escuro backdrop-blur-md rounded-full border border-borda 
-          max-md:w-[90vw] max-md:p-2.5 max-md:gap-1.5 max-md:flex-wrap
+          max-md:w-[90vw] max-md:p-2.5 max-md:gap-1.5 max-md:flex-wrap font-dream
         "
       >
         {navLinks.map((link) => (
