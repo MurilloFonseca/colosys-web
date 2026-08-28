@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Define os arquivos que o Tailwind deve analisar para gerar as classes utilitárias */
+@source "./index.html";
+@source "./src/**/*.{js,jsx}";
+
+@theme {
+  /* Cores personalizadas */
+  --color-azul-ceu-claro: #a9b3e5;
+  --color-azul-vivo: #2c39a0;
+  --color-azul-profundo: #00044e;
+  --color-azul-noite: #012a4a;
+  --color-azul-hover: #61a5c2;
+  --color-texto-principal: #bccbdb;
+  --color-transparente-escuro: #00022b32;
+  --color-borda: rgba(170, 165, 255, 0.241);
+
+  /* Famílias de fontes personalizadas */
+  --font-calm: Calm, serif;
+  --font-le: Le, serif;
+  --font-dream: Dream, sans-serif;
+}
+
+@font-face {
+  font-family: "Calm";
+  src: url("./src/assets/font/Calm\ Serif\ \(DemoVersion\).otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Le";
+  src: url("./src/assets/font/Le\ Jour\ Serif\ Personal\ Use\ Only.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dream";
+  src: url("./src/assets/font/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-azul-profundo;
+}
