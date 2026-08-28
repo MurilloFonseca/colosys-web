@@ -23,14 +23,14 @@
 
 @font-face {
   font-family: "Calm";
-  src: url("assets/font/Calm\ Serif\ \(DemoVersion\).otf") format("opentype");
+  src: url("/assets/font/Calm\ Serif\ \(DemoVersion\).otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Le";
-  src: url("assets/font/Le\ Jour\ Serif\ Personal\ Use\ Only.otf")
+  src: url("/assets/font/Le\ Jour\ Serif\ Personal\ Use\ Only.otf")
     format("opentype");
   font-weight: normal;
   font-style: normal;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: "Dream";
-  src: url("assets/font/CaviarDreams.ttf") format("truetype");
+  src: url("/assets/font/CaviarDreams.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

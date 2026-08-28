@@ -3,35 +3,35 @@ const integrantes = [
     id: 1,
     nome: "Beatriz",
     rm: "573698",
-    imagem: "assets/img/beatriz.png",
+    imagem: "/assets/img/beatriz.png",
     cargo: "Dev Front-end"
   },
   {
     id: 2,
     nome: "Lorenzo",
     rm: "570036",
-    imagem: "assets/img/lorenzo.png",
+    imagem: "/assets/img/lorenzo.png",
     cargo: "Product Manager"
   },
   {
     id: 3,
     nome: "Maria",
     rm: "573246",
-    imagem: "assets/img/maria.png",
+    imagem: "/assets/img/maria.png",
     cargo: "Storyteller"
   },
   {
     id: 4,
     nome: "Murillo",
     rm: "573674",
-    imagem: "assets/img/murillo.png",
+    imagem: "/assets/img/murillo.png",
     cargo: "Dev Back-end"
   },
   {
     id: 5,
     nome: "Raíssa",
     rm: "572166",
-    imagem: "assets/img/raissa.png",
+    imagem: "/assets/img/raissa.png",
     cargo: "Dev Python"
   },
 ];
