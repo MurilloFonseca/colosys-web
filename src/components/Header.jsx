@@ -1,5 +1,5 @@
 import navLinks from "../data/navLinks";
-import Logo from "../assets/img/logo.png";
+import Logo from "/assets/img/logo.png";
 
 function Header() {
   return (
