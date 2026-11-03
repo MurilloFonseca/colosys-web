@@ -12,7 +12,7 @@ function Solucao() {
       </h2>
 
       {/* Grid configurado para 4 colunas em telas grandes (lg) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1400px] mx-auto px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-350 mx-auto px-4">
         {solucaoCards.map((card) => (
           <SolucaoCard
             key={card.id}

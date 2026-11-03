@@ -50,3 +50,27 @@ html {
 body {
   @apply bg-azul-profundo;
 }
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-aurora {
+  background: linear-gradient(200deg,
+      #a9b3e5,
+      #2c39a0,
+      #00044e,
+      #012a4a);
+  background-size: 500% 500%;
+  animation: aurora 30s ease infinite;
+}

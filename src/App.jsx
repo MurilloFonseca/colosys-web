@@ -1,32 +1,24 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Publico from "./components/Publico";
-import Ideia from "./components/Ideia";
-import Mudanca from "./components/Mudanca";
-import Solucao from "./components/Solucao";
-import Contato from "./components/Contato";
-import Integrantes from "./components/Integrantes";
-import Final from "./components/Final";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import Entrar from "./pages/Entrar";
+import Cadastro from "./pages/Cadastro";
+import Principal from "./pages/Principal";
 
 function App() {
   return (
-    <>
-      <Header />
+    <Routes>
+      {/* Rota 1: Tela de Boas-vindas/Saudação (Primeira tela do site) */}
+      <Route path="/" element={<Index />} />
 
-      <main>
-        <Hero />
-        <Publico />
-        <Ideia />
-        <Mudanca />
-        <Solucao />
-        <Contato/>
-        <Integrantes/>
-        <Final />
-      </main>
+      {/* Rota 2: Tela de Entrar (Login) */}
+      <Route path="/entrar" element={<Entrar />} />
 
-      <Footer />
-    </>
+      {/* Rota 3: Tela de Cadastro */}
+      <Route path="/cadastro" element={<Cadastro />} />
+
+      {/* Rota 4: Página Principal (Landing Page) */}
+      <Route path="/principal" element={<Principal />} />
+    </Routes>
   );
 }
 
