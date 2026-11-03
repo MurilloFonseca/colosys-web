@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logoImg from "../assets/img/logo.png";
-import celularImg from "../assets/img/CelularInicio.png";
+import logoImg from "/assets/img/logo.png";
+import celularImg from "/assets/img/CelularInicio.png";
 
 function Index() {
   return (

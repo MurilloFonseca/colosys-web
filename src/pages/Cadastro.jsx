@@ -1,5 +1,5 @@
 import { useNavigate, Link } from "react-router-dom";
-import logoImg from "../assets/img/logo.png";
+import logoImg from "/assets/img/logo.png";
 import { useState } from "react";
 import { validateEmail, validatePassword } from "../utils/validation";
 import { hashPassword } from "../utils/password";
