@@ -1,4 +1,4 @@
-import Video from '../assets/video/ideia.mp4'
+import Video from "../assets/video/ideia.mp4";
 
 function Ideia() {
   return (

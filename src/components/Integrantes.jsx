@@ -1,5 +1,5 @@
-import integrantes from '../data/integrantes';
-import IntegranteCard from './IntegranteCard';
+import integrantes from "../data/integrantes";
+import IntegranteCard from "./IntegranteCard";
 
 function Integrantes() {
   return (

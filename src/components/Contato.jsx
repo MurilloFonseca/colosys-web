@@ -1,9 +1,10 @@
 import { useState } from "react";
 
 function Contato() {
-  const [nome, setNome] = useState("");
-  const [sobrenome, setSobrenome] = useState("");
-  const [email, setEmail] = useState("");
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  const [nome, setNome] = useState(user?.nome ?? "");
+  const [email, setEmail] = useState(user?.email ?? "");
   const [msg, setMsg] = useState("");
 
   const handleSubmit = (e) => {
@@ -11,11 +12,11 @@ function Contato() {
 
     const lista = JSON.parse(localStorage.getItem("mensagens") || "[]");
 
-    lista.push({ nome, sobrenome, email, msg });
+    lista.push({ nome, email, msg });
 
     localStorage.setItem("mensagens", JSON.stringify(lista));
 
-    alert("Sua Mensagem foi enviada!\nMuito obrigada pelo seu feedback");
+    alert("Sua Mensagem foi enviada!\nMuito obrigado pelo seu feedback");
   };
 
   return (
@@ -35,6 +36,7 @@ function Contato() {
               <input
                 type="text"
                 placeholder="Seu nome"
+                defaultValue={nome}
                 onChange={(e) => setNome(e.target.value)}
                 autoComplete="name"
                 className="
@@ -43,22 +45,12 @@ function Contato() {
                 "
                 required
               />
-
-              <input
-                type="text"
-                placeholder="Seu sobrenome"
-                onChange={(e) => setSobrenome(e.target.value)}
-                autoComplete="surname"
-                className="
-                  flex-1 p-4 rounded-xl border border-texto-principal text-texto-principal 
-                  outline-none focus:ring-2 focus:ring-azul-hover font-dream
-                "
-              />
             </div>
 
             <input
               type="email"
               placeholder="Seu e-mail"
+              defaultValue={email}
               onChange={(e) => setEmail(e.target.value)}
               autoComplete="email"
               className="

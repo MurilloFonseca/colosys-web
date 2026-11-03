@@ -3,10 +3,13 @@ import navLinks from "../data/navLinks";
 import Logo from "../assets/img/logo.png";
 
 function Header() {
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 pointer-events-none p-3 sm:p-5">
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between gap-2 pointer-events-auto">
-        
         <div className="flex items-center gap-2 shrink-0">
           <img
             src={Logo}
@@ -42,6 +45,7 @@ function Header() {
 
         <Link
           to="/"
+          onClick={handleLogout}
           className="
             shrink-0 px-3 py-1.5 sm:px-5 sm:py-2 
             text-texto-principal bg-transparente-escuro backdrop-blur-md 
@@ -51,7 +55,6 @@ function Header() {
         >
           Sair
         </Link>
-
       </div>
     </header>
   );

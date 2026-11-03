@@ -1,6 +1,6 @@
 function IntegranteCard({ nome, rm, imagem, cargo }) {
   return (
-    <div className="flex flex-col items-center text-center transition-transform duration-500 hover:scale-105 w-full max-w-[240px]">
+    <div className="flex flex-col items-center text-center transition-transform duration-500 hover:scale-105 w-full max-w-60">
       <img
         className="w-full max-w-50 sm:max-w-55 aspect-square rounded-xl object-cover border border-borda shadow-lg"
         src={imagem}

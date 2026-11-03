@@ -8,8 +8,21 @@ import Contato from "../components/Contato";
 import Integrantes from "../components/Integrantes";
 import Final from "../components/Final";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Principal() {
+  const navigate = useNavigate();
+
+  const user = localStorage.getItem("user");
+
+  useEffect(() => {
+    if (!user) {
+      alert("Você não pode acessar essa página");
+      navigate("/");
+    }
+  }, [user, navigate]);
+
   return (
     <>
       <Header />

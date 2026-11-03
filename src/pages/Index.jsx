@@ -1,20 +1,23 @@
-import { Link } from 'react-router-dom';
-import logoImg from '../assets/img/logo.png';
-import celularImg from '../assets/img/CelularInicio.png';
+import { Link } from "react-router-dom";
+import logoImg from "../assets/img/logo.png";
+import celularImg from "../assets/img/CelularInicio.png";
 
 function Index() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-aurora">
-
       <header className="absolute top-5 left-7.5 flex items-center gap-3">
-        <img src={logoImg} alt="Logo Colosys" className="w-9.5 h-9.5 object-contain m-0" />
-        <h1 className="font-le text-[20px] font-normal text-texto-principal">Colosys</h1>
+        <img
+          src={logoImg}
+          alt="Logo Colosys"
+          className="w-9.5 h-9.5 object-contain m-0"
+        />
+        <h1 className="font-le text-[20px] font-normal text-texto-principal">
+          Colosys
+        </h1>
       </header>
 
-    
       <main className="flex flex-col justify-center items-center h-screen text-texto-principal">
         <section className="w-[90vw] md:w-[70vw] h-auto md:h-[70vh] p-10 flex flex-col md:flex-row justify-between items-center text-left rounded-[10px] bg-transparente-escuro backdrop-blur-[10px] border border-borda gap-7.5 md:gap-0">
-       
           <div className="flex flex-col">
             <h1 className="ml-0 md:ml-7.5 font-le text-[42px] md:text-[65px] font-normal leading-tight">
               SEJA BEM-VINDO(A)!
