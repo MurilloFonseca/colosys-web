@@ -1,4 +1,4 @@
-import Banner from "../assets/video/banner.mp4";
+import Banner from "/assets/video/banner.mp4";
 
 function Hero() {
   return (

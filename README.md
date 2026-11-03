@@ -62,7 +62,7 @@ seguintes etapas do desenvolvimento:
 
 ## Link do Deploy na Vercel
 
-[https://SEU-PROJETO.vercel.app](https://colosys-web.vercel.app/)
+[https://colosys-web.vercel.app/](https://colosys-web.vercel.app/)
 
 ## Link do repositório Github
 

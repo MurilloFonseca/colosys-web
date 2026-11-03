@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import navLinks from "../data/navLinks";
-import Logo from "../assets/img/logo.png";
+import Logo from "/assets/img/logo.png";
 
 function Header() {
   const handleLogout = () => {
